@@ -11,10 +11,6 @@ import static com.codeborne.selenide.Selenide.*;
 import static com.codeborne.selenide.Condition.*;
 
 public class PillartTest {
-    /*
-    public PillartTest() {
-    }*/
-
     
      @Test
      public void UITest() {
@@ -37,13 +33,7 @@ public class PillartTest {
         $("#Kasutajanimi").pressEnter();
         $("#Navigation").shouldHave(text("Lahku"));
      }
-     
-     @Test
-     public void FailTest(){
-        open("http://www.pillart.ee/");
-        $("#a_SysTopMenuTPL").click();
-     }
-     
+
      @Test
      public void Shopping(){
          open("http://www.pillart.ee/");
